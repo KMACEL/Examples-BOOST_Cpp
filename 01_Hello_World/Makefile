@@ -1,7 +1,8 @@
 CC = g++
 CFLAGS = -O2 -Wall -Wextra -Werror -std=c++11
 MAIN = src/main.cpp
-LIBS = -I ../../boost_1_67_0/boost
+BOOST_PATH = ../../boost/boost_1_68_0
+LIBS = -I $(BOOST_PATH)
 OUT = test
 
 all: run

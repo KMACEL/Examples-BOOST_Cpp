@@ -25,7 +25,7 @@ int main()
 	acceptor.bind(ep, ec);
 
 	// Handling errors if any.
-	if (ec != 0)
+	if (ec.value() != 0)
 	{
 		// Failed to bind the acceptor socket. Breaking
 		// execution.
@@ -34,6 +34,8 @@ int main()
 				  << ec.message();
 		return ec.value();
 	}
+
+	std::cout << "Finish..." << std::endl;
 
 	return 0;
 }

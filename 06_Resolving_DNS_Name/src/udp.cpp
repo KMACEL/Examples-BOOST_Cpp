@@ -29,7 +29,7 @@ int main()
 	asio::ip::udp::resolver::iterator it =
 		resolver.resolve(resolver_query, ec);
 	// Handling errors if any.
-	if (ec != 0)
+	if (ec.value() != 0)
 	{
 		// Failed to resolve the DNS name. Breaking execution.
 		std::cout << "Failed to resolve a DNS name."
