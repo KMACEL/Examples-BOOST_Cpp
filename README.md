@@ -44,9 +44,13 @@ cd boost_1_68_0/
 ```
 
 ## System Env Settings
-BOOST_PATH=~/MA/boost/boost_1_68_0
-export LD_LIBRARY_PATH=LD_LIBRARY_PATH:/$BOOST_PATH/lib
 
+Add : ~/.profile
+
+```bash
+BOOST_ROOT=~/boost/boost_1_68_0
+export LD_LIBRARY_PATH=LD_LIBRARY_PATH:/$BOOST_ROOT/lib
+```
 ## Referance : 
 > https://www.boost.org/doc/libs/1_67_0/
 
