@@ -43,6 +43,10 @@ cd boost_1_68_0/
 ./b2 install
 ```
 
+## System Env Settings
+BOOST_PATH=~/MA/boost/boost_1_68_0
+export LD_LIBRARY_PATH=LD_LIBRARY_PATH:/$BOOST_PATH/lib
+
 ## Referance : 
 > https://www.boost.org/doc/libs/1_67_0/
 
